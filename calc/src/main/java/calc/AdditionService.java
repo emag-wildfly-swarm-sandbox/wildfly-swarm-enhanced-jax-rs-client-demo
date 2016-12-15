@@ -3,14 +3,12 @@ package calc;
 import org.wildfly.swarm.cdi.jaxrsapi.Service;
 import org.wildfly.swarm.cdi.jaxrsapi.ServiceClient;
 
-import javax.enterprise.context.Dependent;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-@Dependent
 @Path("/")
 @Service(baseUrl = "http://localhost:8180/")
 public interface AdditionService extends ServiceClient<AdditionService> {
